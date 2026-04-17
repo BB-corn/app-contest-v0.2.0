@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "京迹",
+    "slug": "jingji-beijing-landmarks",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "jingji",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#faf8f5"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "用于在地图中定位你的当前位置"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#faf8f5"
+      },
+      "permissions": [
+        "CAMERA",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "用于选择建筑图片进行识别",
+          "cameraPermission": "用于拍摄建筑照片进行识别"
+        }
+      ]
+    ]
+  }
+}
