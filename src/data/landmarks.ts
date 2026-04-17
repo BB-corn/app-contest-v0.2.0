@@ -35,9 +35,9 @@ export interface Landmark {
 }
 
 /**
- * 18 个北京精选古建 / 标志性历史景点
+ * 北京精选古建 / 标志性历史景点（212个完整版）
  * 坐标体系：WGS-84（适配 Leaflet + OpenStreetMap / CartoDB 瓦片）
- * 来源：OpenStreetMap Nominatim 查询 + 人工校正
+ * 来源：Excel经纬度 + OpenStreetMap Nominatim + 人工校正
  */
 export const landmarks: Landmark[] = [
   {
