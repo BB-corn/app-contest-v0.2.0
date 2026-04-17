@@ -36,6 +36,7 @@ export function LandmarkDetailScreen() {
 
   const fav = isFavorite(landmark.id);
   const col = CAT_COLORS[landmark.category] ?? colors.primary;
+  const builtYearText = landmark.builtYear ? `始建${landmark.builtYear}年` : "始建年代不详";
 
   return (
     <View style={[s.page, { paddingTop: insets.top }]}>
@@ -90,9 +91,7 @@ export function LandmarkDetailScreen() {
               {landmark.category}
             </Text>
           </View>
-          <Text style={s.metaText}>
-            {landmark.dynasty} · 始建{landmark.builtYear}年
-          </Text>
+          <Text style={s.metaText}>{landmark.dynasty} · {builtYearText}</Text>
           <Text style={s.metaText}>{landmark.district}</Text>
         </View>
 

@@ -53,7 +53,7 @@ export function WelcomeScreen() {
         <View style={s.divider} />
 
         <Text style={s.intro}>
-          精选 18 处跨越唐、元、明、清的标志性古建遗产，{"\n"}
+          跨越唐、元、明、清的标志性古建遗产，{"\n"}
           以地图为线索，走进北京的历史脉络与建筑之美。
         </Text>
 

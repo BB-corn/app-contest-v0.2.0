@@ -1151,7 +1151,7 @@ export function MapScreen() {
                   </View>
                   <Text style={s.sheetDistrict}>{selected.district}</Text>
                   <Text style={s.sheetDynasty}>
-                    {selected.dynasty} · 始建{selected.builtYear}年
+                    {selected.dynasty} · {selected.builtYear ? `始建${selected.builtYear}年` : "始建年代不详"}
                   </Text>
                 </View>
                 {sheetMode === 'peek' && (
